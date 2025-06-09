@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易YouTube風サイト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>簡易YouTube風サイト</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="動画やプレイリストを検索...">
+            <button id="searchButton">検索</button>
+        </div>
+    </header>
+    <main>
+        <div id="searchResults" class="results-grid">
+            </div>
+
+        <div id="videoDetail" class="hidden">
+            <button id="backToList">← 検索結果に戻る</button>
+            <h2 id="videoTitle"></h2>
+            <div class="video-player-container">
+                <iframe id="youtubePlayer" width="800" height="450" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p id="videoUploader"></p>
+            <p id="videoDescription"></p>
+            <p id="videoViews"></p>
+        </div>
+
+        <div id="playlistDetail" class="hidden">
+            <button id="backToListFromPlaylist">← 検索結果に戻る</button>
+            <h2 id="playlistTitle"></h2>
+            <p id="playlistDescription"></p>
+            <p id="playlistVideoCount"></p>
+            <div id="playlistVideos" class="results-grid">
+                </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 簡易YouTube風サイト</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
