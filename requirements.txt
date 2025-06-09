@@ -1,5 +1,0 @@
-Flask
-yt-dlp
-# Add packages for your chosen cloud storage here, e.g.:
-# boto3
-# google-cloud-storage
