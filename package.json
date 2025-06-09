@@ -1,0 +1,18 @@
+{
+    "name": "ytdlp-webm-converter-api",
+    "version": "1.0.0",
+    "description": "A serverless API to convert YouTube videos to high-quality WebM with yt-dlp.",
+    "main": "api/index.js",
+    "scripts": {
+        "start": "node api/index.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "yt-dlp": "github:yt-dlp/yt-dlp" // Install yt-dlp as a dependency if you use a wrapper, or ensure its binary is available
+                                     // Better to install yt-dlp via its binary on Vercel or use a custom build step.
+    },
+    "devDependencies": {},
+    "engines": {
+        "node": ">=18.x"
+    }
+}
